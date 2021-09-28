@@ -1,0 +1,45 @@
+// 文字樣式
+.family_style_1{
+  font-family: 'Merriweather';
+  font-style: italic;
+}
+
+//hover樣式
+.hover1{
+  &:hover{
+    color: pink;
+  }
+}
+
+//特殊內距
+.pe_255{
+  padding-right: 255px;
+  @include media-breakpoint-up(md) {
+    padding-right: 100px;
+  }
+}
+.ps_255{
+  padding-left: 255px;
+  @include media-breakpoint-up(md) {
+    padding-left: 100px;
+  }
+}
+.pe_135{
+  padding-right: 135px;
+  @include media-breakpoint-up(md) {
+    padding-right: 60px;
+  }
+}
+
+// bg工具
+.bg-cover{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.bg-cover_2{
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}

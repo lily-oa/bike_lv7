@@ -1,1 +1,7 @@
-@import './layout/_index.scss';
+/*-- 老師給的和自設的設定檔 --*/
+@import "helpers/bootstrap.scss";
+/*-- setting --*/
+@import "settings/base";
+@import "settings/util";
+/*-- pages --*/
+@import "pages/index";
