@@ -4,4 +4,4 @@ repo: https://github.com/lily-oa/bike_lv7
 
 pages: https://lily-oa.github.io/bike_lv7/
 
-myself: 
+myself: https://l7-bike.red.cash/
