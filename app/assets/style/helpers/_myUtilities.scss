@@ -1,0 +1,11 @@
+// 為了中間標籤rwd定位而自設的api
+$utilities: map-merge(
+  $utilities,(
+    "position": map-merge(
+      map-get($utilities, "position"),
+      (
+        class: pos
+      )
+    ),
+  )
+)

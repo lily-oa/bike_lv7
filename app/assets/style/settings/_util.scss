@@ -4,6 +4,10 @@
   font-style: italic;
 }
 
+.family_style_2{
+  font-family: 'Roboto';
+}
+
 //hover樣式
 .hover1{
   &:hover{
@@ -43,3 +47,15 @@
   background-position: top;
   background-repeat: no-repeat;
 }
+
+// 斷點
+@mixin pc{
+  @media (min-width: 1140px){
+    @content
+  };
+};
+@mixin pc-1200{
+  @media (min-width: 1200px){
+    @content
+  };
+};

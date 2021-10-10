@@ -1,81 +1,112 @@
-.header-logo{
+// navbar
+.navbar-logo {
   height: 48px;
   width: 112px;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8a71940d3cd9c932e7126e75e093f68f3a861b79/week7/logo-fixie.svg");
   /* 圖片取代文字 */
-  white-space: nowrap; /* 規定段落中的文字不得進行換行 */
-  text-indent: 101%;   /* 強迫文字縮排至原本的區域外 */
-  overflow: hidden;    /* 將超出範圍的內容隱藏 */
+  white-space: nowrap;
+  /* 規定段落中的文字不得進行換行 */
+  text-indent: 101%;
+  /* 強迫文字縮排至原本的區域外 */
+  overflow: hidden;
+  /* 將超出範圍的內容隱藏 */
 }
 
-.banner{
-  height: 864px;
-  &_img{
+//toogler-bar
+.toggler-bar {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: $secondary;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.toggler-bar-top {
+  top: 5px;
+}
+.toggler-bar-middle {
+  top: 16px;
+}
+.toggler-bar-bottom {
+  top: 27px;
+}
+.toggler-bar-top-rotate {
+  top: 15px;
+  transform: rotate(45deg);
+}
+.toggler-bar-bottom-rotate {
+  top: 15px;
+  transform: rotate(-45deg);
+}
+
+// banner
+.banner_txt {
+  width: 73%;
+}
+.banner {
+  &_img {
     background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img1.jpg?raw=true");
-    height: 864px;
-    width: 960px;
+    height: calc(100vh - 96px - 120px);
+    z-index: -1;
+    @include media-breakpoint-up(sm) {
+      height: 100vh !important;
+    }
+  }
+  &__item-name {
+    line-height: 1;
+    @include media-breakpoint-up(md) {
+      line-height: 1.5;
+      font-size: 27px;
+      text-align: center;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 32px;
+      line-height: 1.5;
+    }
+  }
+  &__rideImg {
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img2.jpg?raw=true');
+    height: 100vh;
+    @include media-breakpoint-up(sm) {
+      height: auto !important;
+    }
   }
 }
 
-.border_line1{
-  border-right: 1px solid $border1;
-}
-
-.description{
-  &_img1{
-    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img2.jpg?raw=true");
-    height: 960px;
-  }
-  &_img2{
-    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img3.jpg?raw=true");
-    height: 960px;
+.word_bottom {
+  margin-bottom: 36px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 300px;
   }
 }
 
-.item1{
-  width: 150px;
-  height: 61px;
-  background: #fff;
-  color: $border1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-100%, -50%);
-  &_arrow{
-    width: 61px;
-    height: 61px;
-    background: $border1;
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    transform: translate(0%, -50%);
+// 文字
+.info {
+  padding: 20px;
+  @include media-breakpoint-up(sm) {
+    padding: 48px;
   }
 }
 
-.item2{
-  width: 150px;
-  height: 61px;
-  background: $border1;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-100%, -50%);
-  &_arrow{
-    width: 61px;
-    height: 61px;
-    background: #fff;
-    color: $border1;
-    top: 50%;
-    left: 50%;
-    transform: translate(0%, -50%);
+.banner_wheelImg {
+  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img3.jpg?raw=true');
+  height: 100vh;
+  @include media-breakpoint-up(sm) {
+    height: auto !important;
   }
 }
 
-.avatar{
-  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img4.jpg?raw=true");
-  height: 1000px;
+// 人像圖
+.quote {
+  padding-top: 424px;
+  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img4.jpg?raw=true');
+  min-height: 640px;
   background-attachment: fixed;
-}
-
-.style_width_1{
-  width: 418px;
+  @include media-breakpoint-up(md) {
+    background-position: top !important;
+  }
+  @include media-breakpoint-up(lg) {
+    min-height: 800px;
+  }
 }
