@@ -19146,7 +19146,7 @@ img {
   background-repeat: no-repeat;
 }
 
-/*-- pages --*/
+/*-- layout --*/
 .navbar-logo {
   height: 48px;
   width: 112px;
@@ -19198,6 +19198,7 @@ img {
           transform: rotate(-45deg);
 }
 
+/*-- pages --*/
 .banner_txt {
   width: 73%;
 }
