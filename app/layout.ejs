@@ -22,80 +22,11 @@
 </head>
 
 <body>
-<!--nav navbar-->
-<nav class="navbar navbar-light bg-light p-0 bg-white border-bottom sticky-top">
-  <div class="container-fluid">
-    <h1 class="navbar-logo m-2 m-md-4">
-      <a href="./index.html">Fixie</a>
-    </h1>
-    <!--toggler-bar-->
-    <button class="navbar-toggler border-0 ms-2 ms-md-4" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <div class="pos-relative" style="height: 40px; width: 40px">
-        <span class="toggler-bar toggler-bar-top"></span>
-        <span class="toggler-bar toggler-bar-middle"></span>
-        <span class="toggler-bar toggler-bar-bottom"></span>
-      </div>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a href="#" class="nav-link text-primary fz-6 me-12 ps-4 ps-lg-0">Product</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-primary fz-6 me-12 ps-4 ps-lg-0">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-primary fz-6 ps-4 ps-lg-0">contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+  <%- include('navbar') %>
   <%- contents %>
-
-  <!--footer-->
-  <footer class="container-fluid bg-bg1 py-6">
-    <div class="container">
-      <div class="d-flex flex-nowrap align-items-center justify-content-around">
-        <div class="order-1">
-          <ul class="d-flex">
-            <li class="pe-10"><a href="#">Product</a></li>
-            <li class="pe-10"><a href="#">Blog</a></li>
-            <li class="pe-10"><a href="#">contact</a></li>
-          </ul>
-        </div>
-        <div class="order-2 text-secondary d-none d-md-block">© 2020 Fixie. All Rights Reserved.</div>
-        <div class="order-3 header-logo"><a href="./index.html" class="py-6 fz-9 fz-md-12 fw-bold fst-italic">Fixie</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <%- include('footer') %>
   <!--動畫 js-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      // Global settings:
-      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-      initClassName: 'aos-init', // class applied after initialization
-      animatedClassName: 'aos-animate', // class applied on animation
-      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 120, // offset (in px) from the original trigger point
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 400, // values from 0 to 3000, with step 50ms
-      easing: 'ease', // default easing for AOS animations
-      once: false, // whether animation should happen only once - while scrolling down
-      mirror: false, // whether elements should animate out while scrolling past them
-      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-    });
-  </script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
