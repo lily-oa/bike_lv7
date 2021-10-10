@@ -5984,19 +5984,19 @@ textarea.form-control-lg {
 .shadow-none {
   box-shadow: none !important; }
 
-.position-static {
+.pos-static {
   position: static !important; }
 
-.position-relative {
+.pos-relative {
   position: relative !important; }
 
-.position-absolute {
+.pos-absolute {
   position: absolute !important; }
 
-.position-fixed {
+.pos-fixed {
   position: fixed !important; }
 
-.position-sticky {
+.pos-sticky {
   position: sticky !important; }
 
 .top-0 {
@@ -6011,8 +6011,14 @@ textarea.form-control-lg {
 .top-50 {
   top: 50% !important; }
 
+.top-75 {
+  top: 75% !important; }
+
 .top-100 {
   top: 100% !important; }
+
+.top-auto {
+  top: auto !important; }
 
 .bottom-0 {
   bottom: 0 !important; }
@@ -6026,8 +6032,14 @@ textarea.form-control-lg {
 .bottom-50 {
   bottom: 50% !important; }
 
+.bottom-75 {
+  bottom: 75% !important; }
+
 .bottom-100 {
   bottom: 100% !important; }
+
+.bottom-auto {
+  bottom: auto !important; }
 
 .start-0 {
   left: 0 !important; }
@@ -6041,8 +6053,14 @@ textarea.form-control-lg {
 .start-50 {
   left: 50% !important; }
 
+.start-75 {
+  left: 75% !important; }
+
 .start-100 {
   left: 100% !important; }
+
+.start-auto {
+  left: auto !important; }
 
 .end-0 {
   right: 0 !important; }
@@ -6056,8 +6074,14 @@ textarea.form-control-lg {
 .end-50 {
   right: 50% !important; }
 
+.end-75 {
+  right: 75% !important; }
+
 .end-100 {
   right: 100% !important; }
+
+.end-auto {
+  right: auto !important; }
 
 .translate-middle {
   transform: translate(-50%, -50%) !important; }

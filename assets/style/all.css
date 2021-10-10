@@ -8942,23 +8942,23 @@ fieldset:disabled .btn {
           box-shadow: none !important;
 }
 
-.position-static {
+.pos-static {
   position: static !important;
 }
 
-.position-relative {
+.pos-relative {
   position: relative !important;
 }
 
-.position-absolute {
+.pos-absolute {
   position: absolute !important;
 }
 
-.position-fixed {
+.pos-fixed {
   position: fixed !important;
 }
 
-.position-sticky {
+.pos-sticky {
   position: -webkit-sticky !important;
   position: sticky !important;
 }
@@ -8979,8 +8979,16 @@ fieldset:disabled .btn {
   top: 50% !important;
 }
 
+.top-75 {
+  top: 75% !important;
+}
+
 .top-100 {
   top: 100% !important;
+}
+
+.top-auto {
+  top: auto !important;
 }
 
 .bottom-0 {
@@ -8999,8 +9007,16 @@ fieldset:disabled .btn {
   bottom: 50% !important;
 }
 
+.bottom-75 {
+  bottom: 75% !important;
+}
+
 .bottom-100 {
   bottom: 100% !important;
+}
+
+.bottom-auto {
+  bottom: auto !important;
 }
 
 .start-0 {
@@ -9019,8 +9035,16 @@ fieldset:disabled .btn {
   left: 50% !important;
 }
 
+.start-75 {
+  left: 75% !important;
+}
+
 .start-100 {
   left: 100% !important;
+}
+
+.start-auto {
+  left: auto !important;
 }
 
 .end-0 {
@@ -9039,8 +9063,16 @@ fieldset:disabled .btn {
   right: 50% !important;
 }
 
+.end-75 {
+  right: 75% !important;
+}
+
 .end-100 {
   right: 100% !important;
+}
+
+.end-auto {
+  right: auto !important;
 }
 
 .translate-middle {
@@ -19064,6 +19096,10 @@ img {
   font-style: italic;
 }
 
+.family_style_2 {
+  font-family: 'Roboto';
+}
+
 .hover1:hover {
   color: pink;
 }
@@ -19111,7 +19147,7 @@ img {
 }
 
 /*-- pages --*/
-.header-logo {
+.navbar-logo {
   height: 48px;
   width: 112px;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8a71940d3cd9c932e7126e75e093f68f3a861b79/week7/logo-fixie.svg");
@@ -19124,86 +19160,138 @@ img {
   /* 將超出範圍的內容隱藏 */
 }
 
-.banner {
-  height: 864px;
+.toggler-bar {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: #00000099;
+  border-radius: 10px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.toggler-bar-top {
+  top: 5px;
+}
+
+.toggler-bar-middle {
+  top: 16px;
+}
+
+.toggler-bar-bottom {
+  top: 27px;
+}
+
+.toggler-bar-top-rotate {
+  top: 15px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.toggler-bar-bottom-rotate {
+  top: 15px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.banner_txt {
+  width: 73%;
 }
 
 .banner_img {
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img1.jpg?raw=true");
-  height: 864px;
-  width: 960px;
+  height: calc(100vh - 96px - 120px);
+  z-index: -1;
 }
 
-.border_line1 {
-  border-right: 1px solid #121212;
+@media (min-width: 576px) {
+  .banner_img {
+    height: 100vh !important;
+  }
 }
 
-.description_img1 {
+.banner__item-name {
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .banner__item-name {
+    line-height: 1.5;
+    font-size: 27px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner__item-name {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+}
+
+.banner__rideImg {
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img2.jpg?raw=true");
-  height: 960px;
+  height: 100vh;
 }
 
-.description_img2 {
+@media (min-width: 576px) {
+  .banner__rideImg {
+    height: auto !important;
+  }
+}
+
+.word_bottom {
+  margin-bottom: 36px;
+}
+
+@media (min-width: 768px) {
+  .word_bottom {
+    margin-bottom: 300px;
+  }
+}
+
+.info {
+  padding: 20px;
+}
+
+@media (min-width: 576px) {
+  .info {
+    padding: 48px;
+  }
+}
+
+.banner_wheelImg {
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img3.jpg?raw=true");
-  height: 960px;
+  height: 100vh;
 }
 
-.item1 {
-  width: 150px;
-  height: 61px;
-  background: #fff;
-  color: #121212;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-100%, -50%);
-      -ms-transform: translate(-100%, -50%);
-          transform: translate(-100%, -50%);
+@media (min-width: 576px) {
+  .banner_wheelImg {
+    height: auto !important;
+  }
 }
 
-.item1_arrow {
-  width: 61px;
-  height: 61px;
-  background: #121212;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(0%, -50%);
-      -ms-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
-}
-
-.item2 {
-  width: 150px;
-  height: 61px;
-  background: #121212;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-100%, -50%);
-      -ms-transform: translate(-100%, -50%);
-          transform: translate(-100%, -50%);
-}
-
-.item2_arrow {
-  width: 61px;
-  height: 61px;
-  background: #fff;
-  color: #121212;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(0%, -50%);
-      -ms-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
-}
-
-.avatar {
+.quote {
+  padding-top: 424px;
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img4.jpg?raw=true");
-  height: 1000px;
+  min-height: 640px;
   background-attachment: fixed;
 }
 
-.style_width_1 {
-  width: 418px;
+@media (min-width: 768px) {
+  .quote {
+    background-position: top !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .quote {
+    min-height: 800px;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
