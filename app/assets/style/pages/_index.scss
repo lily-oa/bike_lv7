@@ -61,7 +61,8 @@
   padding-top: 424px;
   background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img4.jpg?raw=true');
   min-height: 640px;
-  background-attachment: fixed;
+  //background-attachment: fixed; //固定背景圖不要滾動，ios不支援
+  clip-path: inset(0); //讓超出的範圍都被剪裁掉
   @include media-breakpoint-up(md) {
     background-position: top !important;
   }
