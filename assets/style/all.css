@@ -19280,7 +19280,8 @@ img {
   padding-top: 424px;
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img4.jpg?raw=true");
   min-height: 640px;
-  background-attachment: fixed;
+  -webkit-clip-path: inset(0);
+          clip-path: inset(0);
 }
 
 @media (min-width: 768px) {
