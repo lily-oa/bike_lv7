@@ -70,3 +70,23 @@
     min-height: 800px;
   }
 }
+
+.quote::before {
+  content: '';
+  position: top;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img4.jpg?raw=true');
+  background-size: cover;
+  //background-attachment: fixed; //固定背景圖不要滾動，ios不支援
+  clip-path: inset(0); //讓超出的範圍都被剪裁掉
+  @include media-breakpoint-up(md) {
+    background-position: top !important;
+  }
+  @include media-breakpoint-up(lg) {
+    min-height: 800px;
+  }
+}
