@@ -19278,48 +19278,21 @@ img {
 
 .quote {
   padding-top: 424px;
-  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img4.jpg?raw=true");
   min-height: 640px;
   -webkit-clip-path: inset(0);
           clip-path: inset(0);
 }
 
-@media (min-width: 768px) {
-  .quote {
-    background-position: top !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .quote {
-    min-height: 800px;
-  }
-}
-
 .quote::before {
   content: '';
-  position: top;
+  position: fixed;
   z-index: -1;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img4.jpg?raw=true");
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img4.jpg?raw=true") top center no-repeat;
   background-size: cover;
-  -webkit-clip-path: inset(0);
-          clip-path: inset(0);
-}
-
-@media (min-width: 768px) {
-  .quote::before {
-    background-position: top !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .quote::before {
-    min-height: 800px;
-  }
 }
 
 /*# sourceMappingURL=all.css.map */
